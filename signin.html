@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Time Tracking for your Projectt</title>
+    <link rel="stylesheet" href="signin.css">
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child">
+            <div class="child-1">
+                <img src="https://app.myhours.com/assets/myhours_app_logo_icon.svg" alt="">
+            </div>
+
+            <h3>Sign in</h3>
+            <form action="">
+                <label for="">EMAIL</label>
+                <br>
+                <input id="email" type="email" placeholder="Email">
+                <br>
+                <br>
+                <br>
+                <br>
+                <label for="">PASSWORD</label>
+                <br>
+                <input id="password" type="text" placeholder="Password">
+                <br>
+                <button id="btn" class="btn-1">Sign in</button>
+            </form>
+            <div class="anchor"> <a href="index.html">New to My Hours? Sign up</a></div>
+
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    let email = document.getElementById('email');
+    let password = document.getElementById('password');
+    let button = document.getElementById('btn');
+
+    button.addEventListener('click', function (e) {
+        e.preventDefault();
+        let userDetails = {
+            email: email.value,
+            password: password.value,
+        }
+        let savedDetails = JSON.parse(localStorage.getItem('userDetails')) || {};
+
+        if (userDetails.email === savedDetails.email && userDetails.password === savedDetails.password) {
+            localStorage.setItem("isAuth", "Authenticated");
+            window.location.href = "./home.html";
+        } else {
+            alert('Wrong Credentials!');
+        }
+
+    });
+
+</script>
