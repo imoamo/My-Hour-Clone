@@ -1,0 +1,1022 @@
+* {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+/* navbar start */
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    font-family: 'Inter', sans-serif;
+    position: fixed;
+    top: 0%;
+    bottom: auto;
+    left: 0%;
+    right: 0%;
+    z-index: 1200;
+}
+
+.logo {
+    width: 20%;
+    margin: 2rem 1rem 2.5rem 1rem;
+}
+
+.logo>img {
+    width: 55%;
+    padding-top: 1rem;
+}
+
+.nav-item {
+    width: 55%;
+    margin: 2rem 1rem 2.5rem 1rem;
+    font-size: 2rem;
+    justify-content: space-evenly;
+}
+
+.nav-item-2 {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.nav-item-2>a {
+    padding-top: 1rem;
+    text-decoration: none;
+    color: rgb(76, 153, 199);
+}
+
+.nav-item-2 a:hover {
+    text-decoration: underline;
+}
+
+.sp {
+    margin-top: 1rem;
+}
+
+.sp>a {
+    text-decoration: none;
+    color: rgb(76, 153, 199);
+    padding-bottom: 4rem;
+}
+
+.btn-1s {
+    margin-top: -5rem;
+    font-weight: 600;
+    padding: .9rem 1.2rem .9rem 1.2rem;
+    font-size: 1.7rem;
+    background-color: rgb(59, 143, 194);
+    color: white;
+    border-radius: 5px;
+    letter-spacing: .1rem;
+    border: none;
+    cursor: pointer;
+    border: 1px solid rgb(44, 177, 240);
+}
+
+.btn-1s:hover {
+    background-color: #4d81a1;
+}
+
+.dropdowns {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-contents {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 200px;
+    font-size: 1.8rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    z-index: 1;
+    margin-top: 20px;
+    padding: 10px 0 10px 0;
+}
+
+/* Style the dropdown links */
+.dropdown-contents a {
+    color: #4d81a1;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: lighter;
+}
+
+/* Change the link color on hover */
+.dropdown-contents a:hover {
+    text-decoration: underline;
+}
+
+/* Show the dropdown menu on hover */
+.dropdowns:hover .dropdown-contents {
+    display: block;
+}
+
+/* navbar end */
+
+
+/* responsive navbar start */
+.navbar {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: none;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    display: none;
+
+}
+
+.bar {
+    margin: 5px 0;
+    color: white;
+}
+
+.fa-bars {
+    color: rgb(76, 81, 82);
+    font-size: 2.5rem;
+    padding-right: 1rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: rgb(76, 153, 199);
+    font-weight: bold;
+}
+
+.bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar img {
+    width: 20%;
+    padding-left: 1rem;
+}
+
+
+.btn-1 {
+    font-weight: lighter;
+    padding: .6rem;
+    font-size: 1rem;
+    background-color: rgb(59, 143, 194);
+    color: white;
+    border-radius: 5px;
+    letter-spacing: .1rem;
+    border: none;
+    cursor: pointer;
+    border: 1px solid rgb(44, 177, 240);
+    width: 26%;
+}
+
+.btn-1:hover {
+    background-color: #4d81a1;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    /* margin-left: 1.9rem; */
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    /* position: absolute; */
+    font-size: 1.5rem;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+    z-index: 1;
+    margin-top: 20px;
+    padding: 10px 0 10px 0;
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+    color: rgb(59, 143, 194);
+    padding: 12px 5px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change the link color on hover */
+.dropdown-content a:hover {
+    text-decoration: underline;
+}
+
+/* responsive navbar end */
+
+
+
+
+/* first text and video start */
+
+.p2 {
+    text-align: center;
+    margin-top: 15rem;
+    letter-spacing: 0.1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.p2>h1,
+h3 {
+    margin-bottom: 1rem;
+    font-weight: lighter;
+}
+
+
+.p2 h1 {
+    font-size: 7.2rem;
+    font-weight: lighter;
+    margin-bottom: 2rem;
+}
+
+.p2 h2 {
+    font-size: 4rem;
+    color: rgb(61, 106, 139);
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
+.p2 h3 {
+    font-size: 2.8rem;
+    color: rgb(61, 106, 139);
+}
+
+
+.btn-2 {
+    margin-top: 3.3rem;
+    font-weight: 600;
+    padding: 2rem 3rem 2rem 3rem;
+    font-size: 2rem;
+    background-color: rgb(59, 143, 194);
+    color: white;
+    border-radius: 5px;
+    letter-spacing: .1rem;
+    border: none;
+    cursor: pointer;
+    border: 1px solid rgb(44, 177, 240)
+}
+
+.btn-2:hover {
+    background-color: #4d81a1;
+
+}
+
+.video {
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.video img {
+    border-radius: 15px;
+    width: 85%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+/* first text and video end */
+
+.text-cont-1 {
+    letter-spacing: 0.1rem;
+    font-family: 'Inter', sans-serif;
+    width: 70%;
+    margin: auto;
+    margin-top: 13rem;
+}
+
+.text-cont-1 h2 {
+    font-size: 4.4rem;
+    color: rgb(57, 114, 148);
+    font-weight: bold;
+
+}
+
+.text-cont-1 p {
+    margin-top: 2.5rem;
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 2.9rem;
+}
+
+.text-cont-1 strong {
+    font-size: 2.2rem;
+}
+
+.border-design {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    margin-top: -6rem;
+    right: -30px;
+    border: 3px dashed rgb(59, 143, 194);
+    font-size: 1.6rem;
+    width: 26%;
+    letter-spacing: 0.1rem;
+    font-family: 'Inter', sans-serif;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
+    float: right;
+    margin-right: 8rem;
+}
+
+.child-border-design {
+    margin-top: 2rem;
+    width: 80%;
+    line-height: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+.child-border-design strong {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+/* chceck box css start */
+
+
+.check-box {
+    border-radius: 5px;
+    width: 45%;
+    margin: auto;
+    margin-top: 10rem;
+    margin-bottom: 13rem;
+    padding: 10px;
+    background-color: rgb(248, 249, 250);
+}
+
+.main-box {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.first-main-box {
+    margin-top: 3rem;
+}
+
+.box-img {
+    margin-right: 2rem;
+}
+
+
+.box-cont {
+    font-size: 1.76rem;
+}
+
+/* chceck box css end */
+
+.border-design-2 {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    margin-top: -6rem;
+    border: 3px dashed rgb(59, 143, 194);
+    font-size: 1.6rem;
+    width: 28%;
+    letter-spacing: 0.1rem;
+    font-family: 'Inter', sans-serif;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
+    float: right;
+    margin-right: 8rem;
+}
+
+.child-border-design-2 {
+    margin-top: 2rem;
+    width: 85%;
+    line-height: 2.3rem;
+    margin-bottom: 2rem;
+}
+
+.child-border-design-2 strong {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.border-design-3 {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    margin-top: -5rem;
+    border: 3px dashed rgb(59, 143, 194);
+    font-size: 1.6rem;
+    width: 27%;
+    letter-spacing: 0.1rem;
+    font-family: 'Inter', sans-serif;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
+    float: right;
+    margin-right: 8rem;
+}
+
+.child-border-design-3 {
+    margin-top: 2rem;
+    width: 85%;
+    line-height: 2.3rem;
+    margin-bottom: 2rem;
+}
+
+.child-border-design-3 strong {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.border-design-4 {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    margin-top: -5rem;
+    border: 3px dashed rgb(59, 143, 194);
+    font-size: 1.6rem;
+    width: 27%;
+    letter-spacing: 0.1rem;
+    font-family: 'Inter', sans-serif;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    font-weight: lighter;
+    float: left;
+    margin-left: 8rem;
+}
+
+.child-border-design-4 {
+    margin-top: 2rem;
+    width: 85%;
+    line-height: 2.3rem;
+    margin-bottom: 2rem;
+
+}
+
+.child-border-design-4 strong {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+
+/* containers css */
+.container-3 {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    margin-top: 10rem;
+    padding-bottom: 7rem;
+    font-family: 'Inter', sans-serif;
+    /* border: 1px solid darkgreen; */
+}
+
+.cont-img {
+    width: 38%;
+}
+
+.cont-img img {
+    width: 100%;
+}
+
+.cont-text {
+    margin-top: 14rem;
+    width: 50%;
+    letter-spacing: .1rem;
+}
+
+
+.cont-text h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: rgb(33, 37, 41);
+}
+
+.cont-text p {
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-weight: lighter;
+    color: rgb(46, 37, 41);
+    line-height: 2.8rem;
+}
+
+.cont-text strong {
+    font-weight: 600;
+    font-size: 2.2rem;
+}
+
+.cont-text span {
+    color: rgb(47, 114, 155);
+    font-weight: bold;
+}
+
+.container-7 {
+    margin: auto;
+    width: 55%;
+    margin-top: 6rem;
+    margin-bottom: 12rem;
+}
+
+
+.container-7 h2 {
+    font-size: 3.2rem;
+    color: rgb(55, 93, 117);
+    text-align: center;
+}
+
+.container-7 p {
+    margin-top: 2.8rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    text-align: center;
+}
+
+.main-tick-items {
+    width: 90%;
+    margin: auto;
+}
+
+.tick-items {
+    display: flex;
+}
+
+.tick-items-child-img {
+    font-size: 1.5rem;
+    display: flex;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+}
+
+.tick-items-child-img a {
+    color: rgb(59, 143, 194);
+}
+
+
+.tick-items-child-img a:hover {
+    text-decoration: none;
+}
+
+.tick-items-child-img img {
+    width: 7%;
+    margin-right: 1rem;
+}
+
+.container-8 {
+    background-color: rgb(248, 250, 251);
+    text-align: center;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 7rem;
+}
+
+.container-8 h2 {
+    font-size: 3.2rem;
+    color: rgb(57, 114, 148);
+    padding-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.container-8 h2+a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.container-8>div {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    color: rgb(55, 93, 138);
+}
+
+.container-8>div {
+    margin-top: 6rem;
+    padding-bottom: 5rem;
+}
+
+.container-8>div>a {
+    color: rgb(0, 0, 0);
+}
+
+.container-8>div>a:hover {
+    text-decoration: none;
+}
+
+
+.btn-2 {
+    padding: 2rem 3.5rem 2rem 3.5rem;
+    background-color: rgb(59, 143, 194);
+    color: white;
+    border-radius: 5px;
+    letter-spacing: .1rem;
+    border: none;
+    cursor: pointer;
+    border: 1px solid rgb(44, 177, 240);
+}
+
+.btn-2:hover {
+    background-color: #4d81a1;
+
+}
+
+/* footer css */
+
+
+.bg-6 {
+    background: rgb(55, 93, 117);
+    font-family: 'Inter', sans-serif;
+    letter-spacing: .1rem;
+    position: relative;
+}
+
+
+.img-logo {
+    /* border: 1px solid chartreuse; */
+    margin-top: 5rem;
+}
+
+.img-logo>img {
+    width: 40%;
+}
+
+.img-logo>div {
+    font-size: 1.5rem;
+    color: rgb(219, 241, 255);
+    font-weight: 500;
+    margin-right: 5rem;
+    margin-top: 1rem;
+}
+
+.grid-5 {
+    display: flex;
+    width: 89%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.mult-ul {
+    width: 15%;
+    margin-top: 5rem;
+}
+
+.mult-ul li {
+    margin-top: 1.2rem;
+}
+
+.mult-ul ul {
+    list-style-type: none;
+}
+
+.mult-ul ul li a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: rgb(219, 241, 255);
+    line-height: 2.3rem;
+}
+
+.mult-ul ul li strong {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: rgb(219, 241, 255);
+    /* line-height: 4rem; */
+}
+
+.last-elem {
+    text-align: center;
+    font-size: 2.2rem;
+    color: rgb(219, 241, 255);
+    margin-top: 3rem;
+    font-weight: lighter;
+    padding-bottom: 2rem;
+}
+
+.last-elem a {
+    color: rgb(219, 241, 255);
+
+}
+
+.last-elem a:hover {
+    text-decoration: none;
+}
+
+
+/*  Responsvice css */
+
+@media (max-width: 840px) {
+
+    .p2 {
+        margin-top: 7rem;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+
+
+    .menu-toggle {
+        display: block;
+        /* margin-bottom: 2rem; */
+    }
+
+    .sps {
+        margin-top: 3rem;
+        margin-left: 2rem;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        font-size: 1.6rem;
+        font-weight: lighter;
+        z-index: 1;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .nav-list li {
+        text-align: left;
+        margin-top: 2.5rem;
+        margin-left: 2rem;
+    }
+
+    .dropdown-content {
+        display: none;
+    }
+
+
+    .dropdown-content {
+        margin-left: 1rem;
+        font-size: 1.5rem;
+        border-left: 2px solid rgb(210, 230, 224);
+        padding-left: .8rem;
+        width: 90%;
+        border-bottom: 2px solid rgb(210, 230, 224);
+    }
+
+    .button {
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    .btn-12 {
+        padding: 1rem;
+        font-size: 1.5rem;
+        background-color: rgb(59, 143, 194);
+        color: white;
+        border-radius: 5px;
+        letter-spacing: .1rem;
+        border: none;
+        cursor: pointer;
+        border: 1px solid rgb(44, 177, 240);
+        width: 26%;
+    }
+
+    .btn-12:hover {
+        background-color: #4d81a1;
+    }
+
+}
+
+@media (max-width:1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width:1000px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width:950px) {
+    html {
+        font-size: 45%;
+    }
+
+    .border-design {
+        border: 2px dashed rgb(59, 143, 194);
+    }
+
+    .border-design-2 {
+        border: 2px dashed rgb(59, 143, 194);
+    }
+
+    .border-design-3 {
+        border: 2px dashed rgb(59, 143, 194);
+    }
+
+    .border-design-4 {
+        border: 2px dashed rgb(59, 143, 194);
+    }
+}
+
+@media (max-width:768px) {
+    html {
+        font-size: 40%;
+    }
+
+    /* footer */
+    .img-logo {
+        margin-top: 5rem;
+    }
+
+    .img-logo>img {
+        width: 12%;
+    }
+
+    .img-logo>div {
+        font-size: 2rem;
+        color: rgb(219, 241, 255);
+        font-weight: 500;
+        margin-left: 5rem;
+        margin-top: 1.5rem;
+        text-align: center;
+        padding-bottom: 2rem;
+        border-bottom: 2px solid rgb(219, 241, 255);
+    }
+
+    .grid-5 {
+        display: flex;
+        flex-direction: column;
+        width: 89%;
+        margin: auto;
+        text-align: center;
+
+    }
+
+    .mult-ul {
+        width: 100%;
+        margin-top: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 2px solid rgb(219, 241, 255);
+    }
+
+
+    .mult-ul li {
+        margin-top: 1.2rem;
+    }
+
+    .mult-ul ul {
+        list-style-type: none;
+    }
+
+    .mult-ul ul li a {
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: 500;
+        color: rgb(219, 241, 255);
+        line-height: 3rem;
+    }
+
+    .mult-ul ul li strong {
+        font-size: 2rem;
+        /* font-weight: li; */
+        color: rgb(219, 241, 255);
+        /* line-height: 4rem; */
+    }
+
+    .last-elem {
+        text-align: center;
+        font-size: 2.2rem;
+        color: rgb(219, 241, 255);
+        margin-top: 3rem;
+        font-weight: lighter;
+        padding-bottom: 2rem;
+    }
+
+    .last-elem a {
+        color: rgb(219, 241, 255);
+
+    }
+
+    .last-elem a:hover {
+        text-decoration: none;
+    }
+
+    /* footer end */
+
+}
+
+@media (max-width:700px) {
+    .border-design {
+        font-size: 1.2rem;
+        width: 35%;
+        border: 1px dashed rgb(59, 143, 194);
+    }
+
+    .child-border-design {
+        margin-top: 2rem;
+        width: 90%;
+        line-height: 2.4rem;
+        margin-bottom: 2rem;
+    }
+
+    .child-border-design strong {
+        font-size: 1.3rem;
+    }
+
+    .border-design-2 {
+        font-size: 1.2rem;
+        width: 35%;
+        border: 1px dashed rgb(59, 143, 194);
+    }
+
+    .child-border-design-2 {
+        margin-top: 2rem;
+        width: 90%;
+        line-height: 2.4rem;
+        margin-bottom: 2rem;
+    }
+
+    .child-border-design-2 strong {
+        font-size: 1.3rem;
+    }
+
+    .border-design-3 {
+        font-size: 1.2rem;
+        width: 35%;
+        border: 1px dashed rgb(59, 143, 194);
+    }
+
+    .child-border-design-3 {
+        margin-top: 2rem;
+        width: 90%;
+        line-height: 2.4rem;
+        margin-bottom: 2rem;
+    }
+
+    .child-border-design-3 strong {
+        font-size: 1.3rem;
+    }
+
+
+    .border-design-4 {
+        font-size: 1.2rem;
+        width: 35%;
+        border: 1px dashed rgb(59, 143, 194);
+    }
+
+    .child-border-design-4 {
+        margin-top: 2rem;
+        width: 90%;
+        line-height: 2.4rem;
+        margin-bottom: 2rem;
+    }
+
+    .child-border-design-4 strong {
+        font-size: 1.3rem;
+    }
+
+}
+
+@media (max-width:530px) {
+    html {
+        font-size: 35%;
+    }
+}
+
+@media (max-width:420px) {
+    html {
+        font-size: 30%;
+    }
+}
