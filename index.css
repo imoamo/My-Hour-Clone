@@ -1143,8 +1143,8 @@ br+a {
     }
 }
 
-@media (max-width:370px) {
+/* @media (max-width:370px) {
     html {
         font-size: 30%;
     }
-}
+} */
