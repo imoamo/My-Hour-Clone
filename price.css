@@ -68,6 +68,7 @@ html {
 }
 
 .btn-1s {
+    margin-top: -1rem;
     font-weight: 600;
     padding: .9rem 1.2rem .9rem 1.2rem;
     font-size: 1.7rem;
@@ -751,6 +752,40 @@ html {
 }
 
 
+@media (max-width:1130px) {
+    .main-tick-items {
+        width: 95%;
+        margin: auto;
+    }
+
+    .tick-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tick-items-child-img {
+        font-size: 1.5rem;
+        display: flex;
+        font-weight: bolder;
+        justify-content: space-between;
+        width: 40%;
+        margin: auto;
+        margin-top: 2.5rem;
+    }
+
+
+
+    .tick-items-child-img a:hover {
+        text-decoration: none;
+    }
+
+    .tick-items-child-img img {
+        width: 7%;
+        margin-right: 1rem;
+    }
+}
+
+
 
 @media (max-width:1000px) {
     html {
@@ -758,11 +793,7 @@ html {
     }
 }
 
-@media (max-width:950px) {
-    html {
-        font-size: 45%;
-    }
-}
+
 
 @media (max-width: 840px) {
 
@@ -860,11 +891,12 @@ html {
         margin: auto;
         justify-content: space-between;
         text-align: center;
-    
+
     }
 }
 
 @media (max-width:768px) {
+
     /* footer start */
     .img-logo {
         margin-top: 5rem;
@@ -947,7 +979,7 @@ html {
 
 @media (max-width:600px) {
     html {
-        font-size: 40%;
+        font-size: 45%;
     }
 
     /* container 4 start */
@@ -974,14 +1006,8 @@ html {
     /* container 4 end */
 }
 
-@media (max-width:420px) {
+@media (max-width:500px) {
     html {
-        font-size: 35%;
-    }
-}
-
-@media (max-width:370px) {
-    html {
-        font-size: 30%;
+        font-size: 40%;
     }
 }
